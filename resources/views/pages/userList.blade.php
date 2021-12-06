@@ -36,7 +36,7 @@
                 </div>
                 @endif
                 <h4 class="my-4 fw-bold text-uppercase">User List</h4>
-                <table class="table table-borded table-striped" border-1>
+                <table class="table table-borded table-striped">
                     <tr class="text-center">
                         <th class="px-4">Id</th>
                         <th class="px-4">Name</th>

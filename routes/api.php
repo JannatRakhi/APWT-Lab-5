@@ -18,7 +18,6 @@ use App\Http\Controllers\UserController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('/user/list', [UserController::class, 'UserAPIList']);
 
-//API 
-Route::get('/user/list',[UserController::class,'UserAPIList']);
-Route::post('/user/list',[UserController::class,'UserAPIPost']);
+Route::post('/user/list', [UserController::class, 'UserAPIPost']);

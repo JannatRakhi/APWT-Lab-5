@@ -19,7 +19,7 @@
         <div class="d-flex justify-content-center align-items-center" style="
     
         width: 100%;
-        background: darkblue;
+        background: white;
         ">
             <div>
                 <div class="form-area">
@@ -37,7 +37,7 @@
                             <table class="mb-4">
                                 <tr>
                                     <td>
-                                        <h4 class="fw-bold mt-5">Update {{ $user->name }}'s Information</h4>
+                                        <h4 class="fw-bold text-success mt-5">Update {{ $user->name }}'s Information</h4>
                                     </td>
     
                                 </tr>

@@ -17,13 +17,17 @@
     <section class="sign-in">
         <div class="container">
             <div class="signin-content">
+                
                 <div class="signin-image">
-                    <figure><img src="loginForm/images/signin-image.jpg" alt="sing up image"></figure>
+                    <figure><img src="loginForm/images/image1.JPEG" alt="sing up image"></figure>
                     <a href="{{ route ('registration') }}" class="signup-image-link">Create an account</a>
+                    
                 </div>
+                
 
                 <div class="signin-form">
-                    <h2 class="form-title">Sign in</h2>
+                    <h2 class="form-title">Sign up</h2>
+                    
                     <form method="POST" action="{{route('dashboard')}}">
                         {{csrf_field()}}
                         <div class="mb-3">
@@ -45,7 +49,7 @@
                             <select name="role" type="text" class="ml-4 form-control">
                                 <option value="">Login as</option>
                                 <option value="admin">Admin</option>
-                                <option value="user">User</option>
+                                <option value="user">Seller</option>
                             </select>
                         </div>
 
@@ -55,7 +59,8 @@
                                 <h6 class="text-danger">{{$message}}</h6>
                                 @enderror
                             </div>
-                            <label for="email"><i class="zmdi zmdi-account material-icons-email"></i></label>
+                            <label for="email"></label>
+                            <h6 class="mb-2 text-sm">Enter Email</h6>
                             <input type="email" name="email" id="email" placeholder="Your Email"/>
                         </div>
                        
@@ -67,7 +72,8 @@
                                 <h6 class="text-danger">{{$message}}</h6>
                                 @enderror
                             </div>
-                            <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                            <label for="your_pass"></label>
+                            <h6 class="mb-2 text-sm">Enter Password</h6>
                             <input type="password" name="password" id="your_pass" placeholder="Your Password"/>
                         </div>
                         <div class="form-group">
@@ -78,14 +84,7 @@
                             <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
                         </div>
                     </form>
-                    <div class="social-login">
-                        <span class="social-label">Or login with</span>
-                        <ul class="socials">
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                        </ul>
-                    </div>
+                   
                 </div>
             </div>
         </div>
